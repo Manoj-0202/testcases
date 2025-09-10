@@ -58,7 +58,7 @@ class Customer2Page(BasePage):
 
     async def verify_enter_the_customer_details_to_create_a_new_account_visible(self):
         await self._enrich_if_needed()
-        assert await self.page.smartAI('customer2_enter_the_customer_details_to_create_a_new_account._label_form_instruction_af6bd943').is_visible()
+        assert await self.page.smartAI('customer2_enter_the_customer_details_to_create_a_new_account._label_form_instructions_1d3264c5').is_visible()
 
     async def verify_full_name_visible(self):
         await self._enrich_if_needed()

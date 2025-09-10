@@ -753,14 +753,11 @@ def _fallback_call(fn_name, page, *args):
             return None
     except Exception as e:
         print(f"[AUTO-STUBS] Fallback failed for {fn_name}: {e!r}")
-def click_add_new_customer(page):
-    return _fallback_call('click_add_new_customer', page)
+def click_add_customer(page):
+    return _fallback_call('click_add_customer', page)
 
-def click_customer(page):
-    return _fallback_call('click_customer', page)
-
-def click_new_customer(page):
-    return _fallback_call('click_new_customer', page)
+def click_customers(page):
+    return _fallback_call('click_customers', page)
 
 def enter_address(page, value):
     return _fallback_call('enter_address', page, value)
@@ -779,3 +776,9 @@ def enter_initial_deposit(page, value):
 
 def enter_occupation(page, value):
     return _fallback_call('enter_occupation', page, value)
+
+def enter_phone_number(page, value):
+    return _fallback_call('enter_phone_number', page, value)
+
+def select_account_type(page, value):
+    return _fallback_call('select_account_type', page, value)

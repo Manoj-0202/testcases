@@ -16,10 +16,6 @@ class DashboardPage(BasePage):
         if force or not is_enriched(self.page_name):
             await enrich_page(self.page, self.page_name)
             self._enriched = True
-    async def verify_navigation_visible(self):
-        await self._enrich_if_needed()
-        assert await self.page.smartAI('dashboard_label_navigation_e89cbf2f').is_visible()
-
     async def click_dashboard(self):
         await self._enrich_if_needed()
         await self.page.smartAI('dashboard_dashboard_button_navigation_83914516').click()
@@ -104,17 +100,13 @@ class DashboardPage(BasePage):
         await self._enrich_if_needed()
         assert await self.page.smartAI('dashboard_revenue_growth_label_revenue_growth_bfb3b4b4').is_visible()
 
-    async def verify_4_visible(self):
+    async def verify_23_4_visible(self):
         await self._enrich_if_needed()
-        assert await self.page.smartAI('dashboard_4%_label_revenue_growth_value_de36ce03').is_visible()
+        assert await self.page.smartAI('dashboard_23.4%_label_revenue_growth_value_76b81799').is_visible()
 
     async def verify_2_1_from_last_month_visible(self):
         await self._enrich_if_needed()
         assert await self.page.smartAI('dashboard_+2.1%_from_last_month_label_revenue_growth_change_fa8c15eb').is_visible()
-
-    async def click_export_report(self):
-        await self._enrich_if_needed()
-        await self.page.smartAI('dashboard_export_report_button_export_ed26f6d4').click()
 
     async def verify_loan_portfolio_trend_visible(self):
         await self._enrich_if_needed()
@@ -144,10 +136,6 @@ class DashboardPage(BasePage):
         await self._enrich_if_needed()
         assert await self.page.smartAI('dashboard_basic_20%_label_basic_segment_6072a081').is_visible()
 
-    async def verify_edit_with_visible(self):
+    async def click_export_report(self):
         await self._enrich_if_needed()
-        assert await self.page.smartAI('dashboard_edit_with_label_edit_info_ab3b756e').is_visible()
-
-    async def click_lovable(self):
-        await self._enrich_if_needed()
-        await self.page.smartAI('dashboard_lovable_button_edit_tool_2de51406').click()
+        await self.page.smartAI('dashboard_export_report_button_export_ed26f6d4').click()
