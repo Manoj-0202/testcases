@@ -1,0 +1,429 @@
+[{'dom-id': '',
+  'dom_class': 'flex h-10 w-full rounded-md border border-input bg-background '
+               'px-3 py-2 text-base ring-offset-background file:border-0 '
+               'file:bg-transparent file:text-sm file:font-medium '
+               'file:text-foreground placeholder:text-muted-foreground '
+               'focus-visible:outline-none focus-visible:ring-2 '
+               'focus-visible:ring-ring focus-visible:ring-offset-2 '
+               'disabled:cursor-not-allowed disabled:opacity-50 md:text-sm '
+               'pl-10',
+  'dom_matched': True,
+  'editable': True,
+  'element_id': 'd9dcb7b6-67dd-421b-8cb1-e94ea6ec7e3e',
+  'enable': True,
+  'external': False,
+  'get_by_text': 'Customers',
+  'height': 40,
+  'intent': 'navigation',
+  'label_text': 'Search customers...',
+  'match_timestamp': '2025-09-10T11:55:23.402767',
+  'ocr_type': 'button',
+  'page_name': 'customer1',
+  'placeholder': 'Search customers...',
+  'tag_name': 'input',
+  'type': 'text',
+  'unique_name': 'customer1_customers_button_navigation_2ff369e0',
+  'value': '',
+  'visible': True,
+  'width': 934.7250366210938,
+  'x': 304.8000183105469,
+  'y': 213.60000610351562},
+ {'dom-id': '',
+  'dom_class': 'flex h-10 w-full rounded-md border border-input bg-background '
+               'px-3 py-2 text-base ring-offset-background file:border-0 '
+               'file:bg-transparent file:text-sm file:font-medium '
+               'file:text-foreground placeholder:text-muted-foreground '
+               'focus-visible:outline-none focus-visible:ring-2 '
+               'focus-visible:ring-ring focus-visible:ring-offset-2 '
+               'disabled:cursor-not-allowed disabled:opacity-50 md:text-sm '
+               'pl-10',
+  'dom_matched': True,
+  'editable': True,
+  'element_id': 'a190172f-9c41-477f-98de-b6e74e101ee1',
+  'enable': True,
+  'external': False,
+  'get_by_text': 'Search customers, loans, transactions...',
+  'height': 40,
+  'intent': 'search',
+  'label_text': 'Search customers...',
+  'match_timestamp': '2025-09-10T11:55:23.621858',
+  'ocr_type': 'textbox',
+  'page_name': 'customer1',
+  'placeholder': 'Search customers...',
+  'tag_name': 'input',
+  'type': 'text',
+  'unique_name': 'customer1_search_customers,_loans,_transactions..._textbox_search_cc811d8f',
+  'value': '',
+  'visible': True,
+  'width': 934.7250366210938,
+  'x': 304.8000183105469,
+  'y': 213.60000610351562},
+ {'dom-id': '',
+  'dom_class': 'flex h-10 w-full rounded-md border border-input bg-background '
+               'px-3 py-2 text-base ring-offset-background file:border-0 '
+               'file:bg-transparent file:text-sm file:font-medium '
+               'file:text-foreground placeholder:text-muted-foreground '
+               'focus-visible:outline-none focus-visible:ring-2 '
+               'focus-visible:ring-ring focus-visible:ring-offset-2 '
+               'disabled:cursor-not-allowed disabled:opacity-50 md:text-sm '
+               'pl-10',
+  'dom_matched': True,
+  'editable': True,
+  'element_id': '4fcdc87e-51aa-4fc8-a207-afaa0f305949',
+  'enable': True,
+  'external': False,
+  'get_by_text': 'Search customers...',
+  'height': 40,
+  'intent': 'search',
+  'label_text': 'Search customers...',
+  'match_timestamp': '2025-09-10T11:55:23.704943',
+  'ocr_type': 'textbox',
+  'page_name': 'customer1',
+  'placeholder': 'Search customers...',
+  'tag_name': 'input',
+  'type': 'text',
+  'unique_name': 'customer1_search_customers..._textbox_search_0ce074e6',
+  'value': '',
+  'visible': True,
+  'width': 934.7250366210938,
+  'x': 304.8000183105469,
+  'y': 213.60000610351562},
+ {'dom-id': '',
+  'dom_class': 'justify-center whitespace-nowrap rounded-md text-sm '
+               'font-medium ring-offset-background transition-colors '
+               'focus-visible:outline-none focus-visible:ring-2 '
+               'focus-visible:ring-ring focus-visible:ring-offset-2 '
+               'disabled:pointer-events-none disabled:opacity-50 '
+               '[&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 '
+               'border border-input bg-background hover:bg-accent '
+               'hover:text-accent-foreground h-10 px-4 py-2 flex items-center '
+               'gap-2',
+  'dom_matched': True,
+  'editable': False,
+  'element_id': '81f9d930-82ac-454c-ab47-d5baccecc355',
+  'enable': True,
+  'external': False,
+  'get_by_text': 'Filters',
+  'height': 40,
+  'intent': 'filter',
+  'label_text': 'Filters',
+  'match_timestamp': '2025-09-10T11:55:23.790555',
+  'ocr_type': 'button',
+  'page_name': 'customer1',
+  'placeholder': '',
+  'tag_name': 'button',
+  'type': 'submit',
+  'unique_name': 'customer1_filters_button_filter_098e0703',
+  'value': '',
+  'visible': True,
+  'width': 95.67500305175781,
+  'x': 1255.5250244140625,
+  'y': 213.60000610351562},
+ {'dom-id': '',
+  'dom_class': 'flex h-10 w-full rounded-md border border-input bg-background '
+               'px-3 py-2 text-base ring-offset-background file:border-0 '
+               'file:bg-transparent file:text-sm file:font-medium '
+               'file:text-foreground placeholder:text-muted-foreground '
+               'focus-visible:outline-none focus-visible:ring-2 '
+               'focus-visible:ring-ring focus-visible:ring-offset-2 '
+               'disabled:cursor-not-allowed disabled:opacity-50 md:text-sm '
+               'pl-10',
+  'dom_matched': True,
+  'editable': True,
+  'element_id': '21b9c83e-a9ae-4e01-8abd-036fb7c780f8',
+  'enable': True,
+  'external': False,
+  'get_by_text': 'Customers',
+  'height': 40,
+  'intent': 'section_title',
+  'label_text': 'Search customers...',
+  'match_timestamp': '2025-09-10T11:55:23.879486',
+  'ocr_type': 'label',
+  'page_name': 'customer1',
+  'placeholder': 'Search customers...',
+  'tag_name': 'input',
+  'type': 'text',
+  'unique_name': 'customer1_customers_label_section_title_f56ded30',
+  'value': '',
+  'visible': True,
+  'width': 934.7250366210938,
+  'x': 304.8000183105469,
+  'y': 213.60000610351562},
+ {'dom-id': '',
+  'dom_class': 'justify-center whitespace-nowrap rounded-md text-sm '
+               'font-medium ring-offset-background transition-colors '
+               'focus-visible:outline-none focus-visible:ring-2 '
+               'focus-visible:ring-ring focus-visible:ring-offset-2 '
+               'disabled:pointer-events-none disabled:opacity-50 '
+               '[&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 '
+               'border border-input bg-background hover:bg-accent '
+               'hover:text-accent-foreground h-10 px-4 py-2 flex items-center '
+               'gap-2',
+  'dom_matched': True,
+  'editable': False,
+  'element_id': 'f5f6ba19-5e61-4be9-bd24-a4751d065436',
+  'enable': True,
+  'external': False,
+  'get_by_text': 'Export',
+  'height': 40,
+  'intent': 'export',
+  'label_text': 'Export',
+  'match_timestamp': '2025-09-10T11:55:23.983953',
+  'ocr_type': 'button',
+  'page_name': 'customer1',
+  'placeholder': '',
+  'tag_name': 'button',
+  'type': 'submit',
+  'unique_name': 'customer1_export_button_export_00f1dc0b',
+  'value': '',
+  'visible': True,
+  'width': 99.30000305175781,
+  'x': 1121.3125,
+  'y': 110.80000305175781},
+ {'dom-id': '',
+  'dom_class': 'justify-center whitespace-nowrap rounded-md text-sm '
+               'font-medium ring-offset-background transition-colors '
+               'focus-visible:outline-none focus-visible:ring-2 '
+               'focus-visible:ring-ring focus-visible:ring-offset-2 '
+               'disabled:pointer-events-none disabled:opacity-50 '
+               '[&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 '
+               'bg-primary text-primary-foreground hover:bg-primary/90 h-10 '
+               'px-4 py-2 flex items-center gap-2',
+  'dom_matched': True,
+  'editable': False,
+  'element_id': '69b116a8-4c3b-4424-b89f-95b4cc2fa231',
+  'enable': True,
+  'external': False,
+  'get_by_text': 'Add Customer',
+  'height': 40,
+  'intent': 'add_customer',
+  'label_text': 'Add Customer',
+  'match_timestamp': '2025-09-10T11:55:24.062243',
+  'ocr_type': 'button',
+  'page_name': 'customer1',
+  'placeholder': '',
+  'tag_name': 'button',
+  'type': 'button',
+  'unique_name': 'customer1_add_customer_button_add_customer_f1b20083',
+  'value': '',
+  'visible': True,
+  'width': 147.3874969482422,
+  'x': 1228.612548828125,
+  'y': 110.80000305175781},
+ {'dom-id': '',
+  'dom_class': 'justify-center whitespace-nowrap rounded-md text-sm '
+               'font-medium ring-offset-background transition-colors '
+               'focus-visible:outline-none focus-visible:ring-2 '
+               'focus-visible:ring-ring focus-visible:ring-offset-2 '
+               'disabled:pointer-events-none disabled:opacity-50 '
+               '[&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 '
+               'bg-primary text-primary-foreground hover:bg-primary/90 h-10 '
+               'px-4 py-2 flex items-center gap-2',
+  'dom_matched': True,
+  'editable': False,
+  'element_id': 'a75a2faa-5975-46d7-85b1-519616b63473',
+  'enable': True,
+  'external': False,
+  'get_by_text': 'Customer List',
+  'height': 40,
+  'intent': 'section_title',
+  'label_text': 'Add Customer',
+  'match_timestamp': '2025-09-10T11:55:24.137367',
+  'ocr_type': 'label',
+  'page_name': 'customer1',
+  'placeholder': '',
+  'tag_name': 'button',
+  'type': 'button',
+  'unique_name': 'customer1_customer_list_label_section_title_194ada63',
+  'value': '',
+  'visible': True,
+  'width': 147.3874969482422,
+  'x': 1228.612548828125,
+  'y': 110.80000305175781},
+ {'dom-id': '',
+  'dom_class': 'flex h-10 w-full rounded-md border border-input bg-background '
+               'px-3 py-2 text-base ring-offset-background file:border-0 '
+               'file:bg-transparent file:text-sm file:font-medium '
+               'file:text-foreground placeholder:text-muted-foreground '
+               'focus-visible:outline-none focus-visible:ring-2 '
+               'focus-visible:ring-ring focus-visible:ring-offset-2 '
+               'disabled:cursor-not-allowed disabled:opacity-50 md:text-sm '
+               'pl-10',
+  'dom_matched': True,
+  'editable': True,
+  'element_id': '6fc7636d-1607-4511-a896-bb992d7593b2',
+  'enable': True,
+  'external': False,
+  'get_by_text': '3 customers found',
+  'height': 40,
+  'intent': 'info',
+  'label_text': 'Search customers...',
+  'match_timestamp': '2025-09-10T11:55:24.231443',
+  'ocr_type': 'label',
+  'page_name': 'customer1',
+  'placeholder': 'Search customers...',
+  'tag_name': 'input',
+  'type': 'text',
+  'unique_name': 'customer1_3_customers_found_label_info_5a0b87ef',
+  'value': '',
+  'visible': True,
+  'width': 934.7250366210938,
+  'x': 304.8000183105469,
+  'y': 213.60000610351562},
+ {'dom-id': '',
+  'dom_class': 'justify-center whitespace-nowrap rounded-md text-sm '
+               'font-medium ring-offset-background transition-colors '
+               'focus-visible:outline-none focus-visible:ring-2 '
+               'focus-visible:ring-ring focus-visible:ring-offset-2 '
+               'disabled:pointer-events-none disabled:opacity-50 '
+               '[&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 '
+               'bg-primary text-primary-foreground hover:bg-primary/90 h-10 '
+               'px-4 py-2 flex items-center gap-2',
+  'dom_matched': True,
+  'editable': False,
+  'element_id': 'd534aa64-9a4d-4e40-ab32-54d326f1751d',
+  'enable': True,
+  'external': False,
+  'get_by_text': 'Customer',
+  'height': 40,
+  'intent': 'column_title',
+  'label_text': 'Add Customer',
+  'match_timestamp': '2025-09-10T11:55:24.315851',
+  'ocr_type': 'label',
+  'page_name': 'customer1',
+  'placeholder': '',
+  'tag_name': 'button',
+  'type': 'button',
+  'unique_name': 'customer1_customer_label_column_title_cd55415b',
+  'value': '',
+  'visible': True,
+  'width': 147.3874969482422,
+  'x': 1228.612548828125,
+  'y': 110.80000305175781},
+ {'dom-id': '',
+  'dom_class': 'flex h-10 w-full items-center justify-between rounded-md '
+               'border border-input bg-background px-3 py-2 text-sm '
+               'ring-offset-background placeholder:text-muted-foreground '
+               'focus:outline-none focus:ring-2 focus:ring-ring '
+               'focus:ring-offset-2 disabled:cursor-not-allowed '
+               'disabled:opacity-50 [&>span]:line-clamp-1',
+  'dom_matched': True,
+  'editable': False,
+  'element_id': '8c7d38c7-8175-4cb2-8e98-93dd23ef8845',
+  'enable': True,
+  'external': False,
+  'get_by_text': 'Account Type',
+  'height': 40,
+  'intent': 'column_title',
+  'label_text': 'Select account type',
+  'match_timestamp': '2025-09-10T11:55:24.403305',
+  'ocr_type': 'label',
+  'page_name': 'customer1',
+  'placeholder': '',
+  'tag_name': 'button',
+  'type': 'button',
+  'unique_name': 'customer1_account_type_label_column_title_03904455',
+  'value': '',
+  'visible': True,
+  'width': 303.20001220703125,
+  'x': 708,
+  'y': 336},
+ {'dom-id': '',
+  'dom_class': '',
+  'dom_matched': True,
+  'editable': False,
+  'element_id': 'c8456ed3-5f54-4485-8bcf-38136b415caa',
+  'enable': True,
+  'external': False,
+  'get_by_text': 'Premium',
+  'height': 0,
+  'intent': 'account_type',
+  'label_text': 'Premium',
+  'match_timestamp': '2025-09-10T11:55:24.629106',
+  'ocr_type': 'label',
+  'page_name': 'customer1',
+  'placeholder': '',
+  'tag_name': 'option',
+  'type': '',
+  'unique_name': 'customer1_premium_label_account_type_b5143443',
+  'value': 'premium',
+  'visible': False,
+  'width': 0,
+  'x': 0,
+  'y': 0},
+ {'dom-id': '',
+  'dom_class': '',
+  'dom_matched': True,
+  'editable': False,
+  'element_id': '0a543d00-b6d2-47df-aee3-8a23c6d65b79',
+  'enable': True,
+  'external': False,
+  'get_by_text': 'Standard',
+  'height': 0,
+  'intent': 'account_type',
+  'label_text': 'Standard',
+  'match_timestamp': '2025-09-10T11:55:24.838212',
+  'ocr_type': 'label',
+  'page_name': 'customer1',
+  'placeholder': '',
+  'tag_name': 'option',
+  'type': '',
+  'unique_name': 'customer1_standard_label_account_type_8be36523',
+  'value': 'standard',
+  'visible': False,
+  'width': 0,
+  'x': 0,
+  'y': 0},
+ {'dom-id': 'radix-:r0:',
+  'dom_class': 'justify-center whitespace-nowrap rounded-md text-sm '
+               'font-medium ring-offset-background transition-colors '
+               'focus-visible:outline-none focus-visible:ring-2 '
+               'focus-visible:ring-ring focus-visible:ring-offset-2 '
+               'disabled:pointer-events-none disabled:opacity-50 '
+               '[&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 '
+               'hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 '
+               'flex items-center gap-2',
+  'dom_matched': True,
+  'editable': False,
+  'element_id': '5e3a08d3-73b4-408e-b53b-bf3bb8d3a369',
+  'enable': True,
+  'external': False,
+  'get_by_text': 'John Doe',
+  'height': 40,
+  'intent': 'user_info',
+  'label_text': 'John Doe',
+  'match_timestamp': '2025-09-10T11:55:25.121682',
+  'ocr_type': 'label',
+  'page_name': 'customer1',
+  'placeholder': '',
+  'tag_name': 'button',
+  'type': 'button',
+  'unique_name': 'customer1_john_doe_label_user_info_fe8e3db3',
+  'value': '',
+  'visible': True,
+  'width': 131.9250030517578,
+  'x': 1244.0750732421875,
+  'y': 16},
+ {'dom-id': '',
+  'dom_class': '',
+  'dom_matched': True,
+  'editable': False,
+  'element_id': '58b71c7c-5162-4476-a5de-8e18d74882be',
+  'enable': True,
+  'external': False,
+  'get_by_text': 'Edit with Lovable',
+  'height': 18,
+  'intent': 'edit_tool',
+  'label_text': 'Edit with',
+  'match_timestamp': '2025-09-10T11:55:25.209654',
+  'ocr_type': 'button',
+  'page_name': 'customer1',
+  'placeholder': '',
+  'tag_name': 'span',
+  'type': '',
+  'unique_name': 'customer1_edit_with_lovable_button_edit_tool_b6e313c0',
+  'value': '',
+  'visible': True,
+  'width': 45.36249923706055,
+  'x': 1262,
+  'y': 867}]
