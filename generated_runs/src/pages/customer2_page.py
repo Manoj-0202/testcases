@@ -16,6 +16,10 @@ class Customer2Page(BasePage):
         if force or not is_enriched(self.page_name):
             await enrich_page(self.page, self.page_name)
             self._enriched = True
+    async def verify_navigation_visible(self):
+        await self._enrich_if_needed()
+        assert await self.page.smartAI('customer2_label_navigation_a3cc11a6').is_visible()
+
     async def click_dashboard(self):
         await self._enrich_if_needed()
         await self.page.smartAI('customer2_dashboard_button_navigation_e147550b').click()
@@ -48,21 +52,17 @@ class Customer2Page(BasePage):
         await self._enrich_if_needed()
         await self.page.smartAI('customer2_settings_button_navigation_ae43bc74').click()
 
-    async def enter_search_customers_loans_transactions(self, value):
-        await self._enrich_if_needed()
-        await self.page.smartAI('customer2_search_customers,_loans,_transactions..._textbox_search_d44caf40').fill(value)
-
     async def verify_add_new_customer_visible(self):
         await self._enrich_if_needed()
         assert await self.page.smartAI('customer2_add_new_customer_label_form_title_503bfefb').is_visible()
 
     async def verify_enter_the_customer_details_to_create_a_new_account_visible(self):
         await self._enrich_if_needed()
-        assert await self.page.smartAI('customer2_enter_the_customer_details_to_create_a_new_account._label_form_instructions_1d3264c5').is_visible()
+        assert await self.page.smartAI('customer2_enter_the_customer_details_to_create_a_new_account._label_form_instruction_af6bd943').is_visible()
 
     async def verify_full_name_visible(self):
         await self._enrich_if_needed()
-        assert await self.page.smartAI('customer2_full_name_label_full_name_info_4552c1c4').is_visible()
+        assert await self.page.smartAI('customer2_full_name_label_full_name_d78a6ebc').is_visible()
 
     async def enter_full_name(self, value):
         await self._enrich_if_needed()
@@ -70,7 +70,7 @@ class Customer2Page(BasePage):
 
     async def verify_email_visible(self):
         await self._enrich_if_needed()
-        assert await self.page.smartAI('customer2_email_label_email_info_c24fac74').is_visible()
+        assert await self.page.smartAI('customer2_email_label_email_bcadadb1').is_visible()
 
     async def enter_email(self, value):
         await self._enrich_if_needed()
@@ -78,7 +78,7 @@ class Customer2Page(BasePage):
 
     async def verify_phone_number_visible(self):
         await self._enrich_if_needed()
-        assert await self.page.smartAI('customer2_phone_number_label_phone_number_info_b7e1828f').is_visible()
+        assert await self.page.smartAI('customer2_phone_number_label_phone_number_77b17573').is_visible()
 
     async def enter_phone_number(self, value):
         await self._enrich_if_needed()
@@ -86,7 +86,7 @@ class Customer2Page(BasePage):
 
     async def verify_account_type_visible(self):
         await self._enrich_if_needed()
-        assert await self.page.smartAI('customer2_account_type_label_account_type_info_79cd93f9').is_visible()
+        assert await self.page.smartAI('customer2_account_type_label_account_type_522d1097').is_visible()
 
     async def select_select_account_type(self, value):
         await self._enrich_if_needed()
@@ -94,7 +94,7 @@ class Customer2Page(BasePage):
 
     async def verify_address_visible(self):
         await self._enrich_if_needed()
-        assert await self.page.smartAI('customer2_address_label_address_info_3a73e4dc').is_visible()
+        assert await self.page.smartAI('customer2_address_label_address_fa02f053').is_visible()
 
     async def enter_address(self, value):
         await self._enrich_if_needed()
@@ -102,7 +102,7 @@ class Customer2Page(BasePage):
 
     async def verify_occupation_visible(self):
         await self._enrich_if_needed()
-        assert await self.page.smartAI('customer2_occupation_label_occupation_info_4f37fac9').is_visible()
+        assert await self.page.smartAI('customer2_occupation_label_occupation_5310c635').is_visible()
 
     async def enter_occupation(self, value):
         await self._enrich_if_needed()
@@ -110,7 +110,7 @@ class Customer2Page(BasePage):
 
     async def verify_annual_income_visible(self):
         await self._enrich_if_needed()
-        assert await self.page.smartAI('customer2_annual_income_label_annual_income_info_a7c984f4').is_visible()
+        assert await self.page.smartAI('customer2_annual_income_label_annual_income_b292547e').is_visible()
 
     async def enter_annual_income(self, value):
         await self._enrich_if_needed()
@@ -118,7 +118,7 @@ class Customer2Page(BasePage):
 
     async def verify_initial_deposit_visible(self):
         await self._enrich_if_needed()
-        assert await self.page.smartAI('customer2_initial_deposit_label_initial_deposit_info_ebc7c8f8').is_visible()
+        assert await self.page.smartAI('customer2_initial_deposit_label_initial_deposit_45f44776').is_visible()
 
     async def enter_initial_deposit(self, value):
         await self._enrich_if_needed()

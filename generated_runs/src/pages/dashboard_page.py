@@ -16,6 +16,14 @@ class DashboardPage(BasePage):
         if force or not is_enriched(self.page_name):
             await enrich_page(self.page, self.page_name)
             self._enriched = True
+    async def verify_bank_crm_visible(self):
+        await self._enrich_if_needed()
+        assert await self.page.smartAI('dashboard_bank_crm_label_app_name_386d51e4').is_visible()
+
+    async def verify_navigation_visible(self):
+        await self._enrich_if_needed()
+        assert await self.page.smartAI('dashboard_navigation_label_section_title_f250786a').is_visible()
+
     async def click_dashboard(self):
         await self._enrich_if_needed()
         await self.page.smartAI('dashboard_dashboard_button_navigation_83914516').click()
@@ -62,80 +70,84 @@ class DashboardPage(BasePage):
 
     async def verify_total_customers_visible(self):
         await self._enrich_if_needed()
-        assert await self.page.smartAI('dashboard_total_customers_label_total_customers_228048fb').is_visible()
+        assert await self.page.smartAI('dashboard_total_customers_label_metric_title_9728f1cf').is_visible()
 
     async def verify_2_847_visible(self):
         await self._enrich_if_needed()
-        assert await self.page.smartAI('dashboard_2,847_label_total_customers_value_6d9c1e09').is_visible()
+        assert await self.page.smartAI('dashboard_2,847_label_metric_value_fdec317c').is_visible()
 
     async def verify_12_5_from_last_month_visible(self):
         await self._enrich_if_needed()
-        assert await self.page.smartAI('dashboard_+12.5%_from_last_month_label_total_customers_change_3fa8cc36').is_visible()
+        assert await self.page.smartAI('dashboard_+12.5%_from_last_month_label_metric_change_d3cd6454').is_visible()
 
     async def verify_active_loans_visible(self):
         await self._enrich_if_needed()
-        assert await self.page.smartAI('dashboard_active_loans_label_active_loans_3dfc1d95').is_visible()
+        assert await self.page.smartAI('dashboard_active_loans_label_metric_title_7b8dadc2').is_visible()
 
     async def verify_45_2m_visible(self):
         await self._enrich_if_needed()
-        assert await self.page.smartAI('dashboard_$45.2m_label_active_loans_value_e93e7652').is_visible()
+        assert await self.page.smartAI('dashboard_$45.2m_label_metric_value_4a2ef93a').is_visible()
 
     async def verify_8_2_from_last_month_visible(self):
         await self._enrich_if_needed()
-        assert await self.page.smartAI('dashboard_+8.2%_from_last_month_label_active_loans_change_60884863').is_visible()
+        assert await self.page.smartAI('dashboard_+8.2%_from_last_month_label_metric_change_8a5c44d3').is_visible()
 
     async def verify_monthly_transactions_visible(self):
         await self._enrich_if_needed()
-        assert await self.page.smartAI('dashboard_monthly_transactions_label_monthly_transactions_914c549d').is_visible()
+        assert await self.page.smartAI('dashboard_monthly_transactions_label_metric_title_12ed8182').is_visible()
 
     async def verify_18_394_visible(self):
         await self._enrich_if_needed()
-        assert await self.page.smartAI('dashboard_18,394_label_monthly_transactions_value_fc666ffb').is_visible()
+        assert await self.page.smartAI('dashboard_18,394_label_metric_value_b6b442dd').is_visible()
 
     async def verify_15_3_from_last_month_visible(self):
         await self._enrich_if_needed()
-        assert await self.page.smartAI('dashboard_+15.3%_from_last_month_label_monthly_transactions_change_4afb9cb3').is_visible()
+        assert await self.page.smartAI('dashboard_+15.3%_from_last_month_label_metric_change_065ef56e').is_visible()
 
     async def verify_revenue_growth_visible(self):
         await self._enrich_if_needed()
-        assert await self.page.smartAI('dashboard_revenue_growth_label_revenue_growth_bfb3b4b4').is_visible()
+        assert await self.page.smartAI('dashboard_revenue_growth_label_metric_title_d1a487c9').is_visible()
 
     async def verify_23_4_visible(self):
         await self._enrich_if_needed()
-        assert await self.page.smartAI('dashboard_23.4%_label_revenue_growth_value_76b81799').is_visible()
+        assert await self.page.smartAI('dashboard_23.4%_label_metric_value_fdc2c567').is_visible()
 
     async def verify_2_1_from_last_month_visible(self):
         await self._enrich_if_needed()
-        assert await self.page.smartAI('dashboard_+2.1%_from_last_month_label_revenue_growth_change_fa8c15eb').is_visible()
-
-    async def verify_loan_portfolio_trend_visible(self):
-        await self._enrich_if_needed()
-        assert await self.page.smartAI('dashboard_loan_portfolio_trend_label_loan_portfolio_trend_16637d4f').is_visible()
-
-    async def verify_monthly_loan_disbursements_over_the_last_6_months_visible(self):
-        await self._enrich_if_needed()
-        assert await self.page.smartAI('dashboard_monthly_loan_disbursements_over_the_last_6_months_label_loan_portfolio_info_f2592b48').is_visible()
-
-    async def verify_customer_distribution_visible(self):
-        await self._enrich_if_needed()
-        assert await self.page.smartAI('dashboard_customer_distribution_label_customer_distribution_28babd8d').is_visible()
-
-    async def verify_customer_segments_by_account_type_visible(self):
-        await self._enrich_if_needed()
-        assert await self.page.smartAI('dashboard_customer_segments_by_account_type_label_customer_distribution_info_737296be').is_visible()
-
-    async def verify_premium_35_visible(self):
-        await self._enrich_if_needed()
-        assert await self.page.smartAI('dashboard_premium_35%_label_premium_segment_a6240e39').is_visible()
-
-    async def verify_standard_45_visible(self):
-        await self._enrich_if_needed()
-        assert await self.page.smartAI('dashboard_standard_45%_label_standard_segment_ddbf0b0b').is_visible()
-
-    async def verify_basic_20_visible(self):
-        await self._enrich_if_needed()
-        assert await self.page.smartAI('dashboard_basic_20%_label_basic_segment_6072a081').is_visible()
+        assert await self.page.smartAI('dashboard_+2.1%_from_last_month_label_metric_change_f5a7bdfe').is_visible()
 
     async def click_export_report(self):
         await self._enrich_if_needed()
         await self.page.smartAI('dashboard_export_report_button_export_ed26f6d4').click()
+
+    async def verify_loan_portfolio_trend_visible(self):
+        await self._enrich_if_needed()
+        assert await self.page.smartAI('dashboard_loan_portfolio_trend_label_section_title_32cf7d0c').is_visible()
+
+    async def verify_monthly_loan_disbursements_over_the_last_6_months_visible(self):
+        await self._enrich_if_needed()
+        assert await self.page.smartAI('dashboard_monthly_loan_disbursements_over_the_last_6_months_label_section_description_a78ce177').is_visible()
+
+    async def verify_customer_distribution_visible(self):
+        await self._enrich_if_needed()
+        assert await self.page.smartAI('dashboard_customer_distribution_label_section_title_4bc10c83').is_visible()
+
+    async def verify_customer_segments_by_account_type_visible(self):
+        await self._enrich_if_needed()
+        assert await self.page.smartAI('dashboard_customer_segments_by_account_type_label_section_description_94640f97').is_visible()
+
+    async def verify_premium_35_visible(self):
+        await self._enrich_if_needed()
+        assert await self.page.smartAI('dashboard_premium_35%_label_segment_info_a60e8697').is_visible()
+
+    async def verify_standard_45_visible(self):
+        await self._enrich_if_needed()
+        assert await self.page.smartAI('dashboard_standard_45%_label_segment_info_ac35b0cb').is_visible()
+
+    async def verify_basic_20_visible(self):
+        await self._enrich_if_needed()
+        assert await self.page.smartAI('dashboard_basic_20%_label_segment_info_b82e11ba').is_visible()
+
+    async def click_edit_with_lovable(self):
+        await self._enrich_if_needed()
+        await self.page.smartAI('dashboard_edit_with_lovable_button_edit_tool_74b8b919').click()

@@ -16,14 +16,6 @@ class Customer1Page(BasePage):
         if force or not is_enriched(self.page_name):
             await enrich_page(self.page, self.page_name)
             self._enriched = True
-    async def verify_logo_visible(self):
-        await self._enrich_if_needed()
-        assert await self.page.smartAI('customer1_label_logo_24c3a894').is_visible()
-
-    async def verify_navigation_visible(self):
-        await self._enrich_if_needed()
-        assert await self.page.smartAI('customer1_navigation_label_navigation_c8ddbfe4').is_visible()
-
     async def click_dashboard(self):
         await self._enrich_if_needed()
         await self.page.smartAI('customer1_dashboard_button_navigation_82dbfff5').click()
@@ -56,21 +48,25 @@ class Customer1Page(BasePage):
         await self._enrich_if_needed()
         await self.page.smartAI('customer1_settings_button_navigation_0688b7c5').click()
 
-    async def enter_search(self, value):
+    async def enter_search_customers_loans_transactions(self, value):
         await self._enrich_if_needed()
-        await self.page.smartAI('customer1_textbox_search_751877d1').fill(value)
+        await self.page.smartAI('customer1_search_customers,_loans,_transactions..._textbox_search_cc811d8f').fill(value)
 
-    async def verify_customers_visible(self):
+    async def enter_search_customers(self, value):
         await self._enrich_if_needed()
-        assert await self.page.smartAI('customer1_customers_label_page_title_e6d7728b').is_visible()
-
-    async def verify_manage_your_customer_relationships_and_accounts_visible(self):
-        await self._enrich_if_needed()
-        assert await self.page.smartAI('customer1_manage_your_customer_relationships_and_accounts_label_page_description_dfe1db64').is_visible()
+        await self.page.smartAI('customer1_search_customers..._textbox_search_0ce074e6').fill(value)
 
     async def click_filters(self):
         await self._enrich_if_needed()
         await self.page.smartAI('customer1_filters_button_filter_098e0703').click()
+
+    async def verify_customers_visible(self):
+        await self._enrich_if_needed()
+        assert await self.page.smartAI('customer1_customers_label_section_title_f56ded30').is_visible()
+
+    async def verify_manage_your_customer_relationships_and_accounts_visible(self):
+        await self._enrich_if_needed()
+        assert await self.page.smartAI('customer1_manage_your_customer_relationships_and_accounts_label_section_info_c0244772').is_visible()
 
     async def click_export(self):
         await self._enrich_if_needed()
@@ -90,27 +86,27 @@ class Customer1Page(BasePage):
 
     async def verify_customer_visible(self):
         await self._enrich_if_needed()
-        assert await self.page.smartAI('customer1_customer_label_column_header_48936c08').is_visible()
+        assert await self.page.smartAI('customer1_customer_label_column_title_cd55415b').is_visible()
 
     async def verify_account_type_visible(self):
         await self._enrich_if_needed()
-        assert await self.page.smartAI('customer1_account_type_label_column_header_462c9a83').is_visible()
+        assert await self.page.smartAI('customer1_account_type_label_column_title_03904455').is_visible()
 
     async def verify_balance_visible(self):
         await self._enrich_if_needed()
-        assert await self.page.smartAI('customer1_balance_label_column_header_de012119').is_visible()
+        assert await self.page.smartAI('customer1_balance_label_column_title_66a19f46').is_visible()
 
     async def verify_status_visible(self):
         await self._enrich_if_needed()
-        assert await self.page.smartAI('customer1_status_label_column_header_38d23622').is_visible()
+        assert await self.page.smartAI('customer1_status_label_column_title_a924671a').is_visible()
 
     async def verify_join_date_visible(self):
         await self._enrich_if_needed()
-        assert await self.page.smartAI('customer1_join_date_label_column_header_5f253287').is_visible()
+        assert await self.page.smartAI('customer1_join_date_label_column_title_24492d13').is_visible()
 
     async def verify_actions_visible(self):
         await self._enrich_if_needed()
-        assert await self.page.smartAI('customer1_actions_label_column_header_2b97e3f6').is_visible()
+        assert await self.page.smartAI('customer1_actions_label_column_title_7a76e079').is_visible()
 
     async def verify_sarah_johnson_visible(self):
         await self._enrich_if_needed()
@@ -135,14 +131,6 @@ class Customer1Page(BasePage):
     async def verify_2023_01_15_visible(self):
         await self._enrich_if_needed()
         assert await self.page.smartAI('customer1_2023-01-15_label_join_date_493fe85d').is_visible()
-
-    async def click_view_action(self):
-        await self._enrich_if_needed()
-        await self.page.smartAI('customer1_button_view_action_6352bc50').click()
-
-    async def click_edit_action(self):
-        await self._enrich_if_needed()
-        await self.page.smartAI('customer1_button_edit_action_87a44e3d').click()
 
     async def verify_michael_chen_visible(self):
         await self._enrich_if_needed()
@@ -180,10 +168,10 @@ class Customer1Page(BasePage):
         await self._enrich_if_needed()
         assert await self.page.smartAI('customer1_2022-11-08_label_join_date_6963bb97').is_visible()
 
-    async def verify_edit_with_visible(self):
+    async def verify_john_doe_visible(self):
         await self._enrich_if_needed()
-        assert await self.page.smartAI('customer1_edit_with_label_edit_tool_fe30b0ae').is_visible()
+        assert await self.page.smartAI('customer1_john_doe_label_user_info_fe8e3db3').is_visible()
 
-    async def click_lovable(self):
+    async def click_edit_with_lovable(self):
         await self._enrich_if_needed()
-        await self.page.smartAI('customer1_lovable_button_edit_tool_04cd68f5').click()
+        await self.page.smartAI('customer1_edit_with_lovable_button_edit_tool_b6e313c0').click()
