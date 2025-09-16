@@ -16,13 +16,17 @@ class DashboardPage(BasePage):
         if force or not is_enriched(self.page_name):
             await enrich_page(self.page, self.page_name)
             self._enriched = True
+    async def click_navigation(self):
+        await self._enrich_if_needed()
+        await self.page.smartAI('dashboard_button_navigation_34c032c8').click()
+
     async def verify_bank_crm_visible(self):
         await self._enrich_if_needed()
-        assert await self.page.smartAI('dashboard_bank_crm_label_app_name_386d51e4').is_visible()
+        assert await self.page.smartAI('dashboard_bank_crm_label_brand_685331d4').is_visible()
 
     async def verify_navigation_visible(self):
         await self._enrich_if_needed()
-        assert await self.page.smartAI('dashboard_navigation_label_section_title_f250786a').is_visible()
+        assert await self.page.smartAI('dashboard_navigation_label_navigation_cc4dcd7a').is_visible()
 
     async def click_dashboard(self):
         await self._enrich_if_needed()
@@ -56,9 +60,9 @@ class DashboardPage(BasePage):
         await self._enrich_if_needed()
         await self.page.smartAI('dashboard_settings_button_navigation_7a36fd5d').click()
 
-    async def enter_search_customers_loans_transactions(self, value):
+    async def enter_search(self, value):
         await self._enrich_if_needed()
-        await self.page.smartAI('dashboard_search_customers,_loans,_transactions..._textbox_search_3310a968').fill(value)
+        await self.page.smartAI('dashboard_textbox_search_23c82b2f').fill(value)
 
     async def verify_dashboard_visible(self):
         await self._enrich_if_needed()
@@ -108,9 +112,9 @@ class DashboardPage(BasePage):
         await self._enrich_if_needed()
         assert await self.page.smartAI('dashboard_revenue_growth_label_metric_title_d1a487c9').is_visible()
 
-    async def verify_23_4_visible(self):
+    async def verify_4_visible(self):
         await self._enrich_if_needed()
-        assert await self.page.smartAI('dashboard_23.4%_label_metric_value_fdc2c567').is_visible()
+        assert await self.page.smartAI('dashboard_4%_label_metric_value_316201d4').is_visible()
 
     async def verify_2_1_from_last_month_visible(self):
         await self._enrich_if_needed()
@@ -122,32 +126,36 @@ class DashboardPage(BasePage):
 
     async def verify_loan_portfolio_trend_visible(self):
         await self._enrich_if_needed()
-        assert await self.page.smartAI('dashboard_loan_portfolio_trend_label_section_title_32cf7d0c').is_visible()
+        assert await self.page.smartAI('dashboard_loan_portfolio_trend_label_chart_title_989237db').is_visible()
 
     async def verify_monthly_loan_disbursements_over_the_last_6_months_visible(self):
         await self._enrich_if_needed()
-        assert await self.page.smartAI('dashboard_monthly_loan_disbursements_over_the_last_6_months_label_section_description_a78ce177').is_visible()
+        assert await self.page.smartAI('dashboard_monthly_loan_disbursements_over_the_last_6_months_label_chart_subtitle_78fea81e').is_visible()
 
     async def verify_customer_distribution_visible(self):
         await self._enrich_if_needed()
-        assert await self.page.smartAI('dashboard_customer_distribution_label_section_title_4bc10c83').is_visible()
+        assert await self.page.smartAI('dashboard_customer_distribution_label_chart_title_e474f1f6').is_visible()
 
     async def verify_customer_segments_by_account_type_visible(self):
         await self._enrich_if_needed()
-        assert await self.page.smartAI('dashboard_customer_segments_by_account_type_label_section_description_94640f97').is_visible()
+        assert await self.page.smartAI('dashboard_customer_segments_by_account_type_label_chart_subtitle_190983a9').is_visible()
 
     async def verify_premium_35_visible(self):
         await self._enrich_if_needed()
-        assert await self.page.smartAI('dashboard_premium_35%_label_segment_info_a60e8697').is_visible()
+        assert await self.page.smartAI('dashboard_premium_35%_label_chart_data_ec7c4e5d').is_visible()
 
     async def verify_standard_45_visible(self):
         await self._enrich_if_needed()
-        assert await self.page.smartAI('dashboard_standard_45%_label_segment_info_ac35b0cb').is_visible()
+        assert await self.page.smartAI('dashboard_standard_45%_label_chart_data_6633c175').is_visible()
 
     async def verify_basic_20_visible(self):
         await self._enrich_if_needed()
-        assert await self.page.smartAI('dashboard_basic_20%_label_segment_info_b82e11ba').is_visible()
+        assert await self.page.smartAI('dashboard_basic_20%_label_chart_data_97bc8bcf').is_visible()
 
-    async def click_edit_with_lovable(self):
+    async def verify_edit_with_visible(self):
         await self._enrich_if_needed()
-        await self.page.smartAI('dashboard_edit_with_lovable_button_edit_tool_74b8b919').click()
+        assert await self.page.smartAI('dashboard_edit_with_label_edit_tool_e1025d09').is_visible()
+
+    async def click_lovable(self):
+        await self._enrich_if_needed()
+        await self.page.smartAI('dashboard_lovable_button_edit_tool_2de51406').click()
